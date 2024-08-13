@@ -1,0 +1,217 @@
+body{
+    cursor: none; 
+}
+#main{
+    margin-top: 70px;
+}
+#main .inner{
+    padding: 0 10px;
+}
+
+.sc-intro{
+    padding: 15px 0;
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    display: flex;
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 12.5px;
+    align-items: flex-end;
+}
+.sc-intro .left{
+    overflow: hidden;
+    flex: 1;
+}
+
+.sc-intro .word {
+    overflow: hidden;
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'nenu';
+  
+}
+
+
+.sc-intro .right{
+    
+    width: 30%;
+}
+.sc-intro .right p{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9vw;
+    line-height: 1.5;
+    text-align: right;
+}
+
+
+/* @keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
+.sc-projects{}
+.sc-projects .container{}
+.sc-projects .container .pro-list{
+    color: #fff;
+}
+.sc-projects .container .pro-item{
+    overflow: hidden;
+    display: flex;
+    gap: 10px;
+}
+/* .sc-projects .container .pro-item:nth-of-type(even){
+    flex-direction: row-reverse;
+}
+.sc-projects .container .pro-item:nth-of-type(even) .title{
+    text-align: right;
+} */
+.sc-projects .container .pro-item .text-area{
+    width: 50%;
+    display: flex;
+}
+.sc-projects .container .pro-item .text-area a{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: hidden;
+}
+.ic-tag{
+    display: inline-block;
+    border: 1px solid white;
+    border-radius: 300px;
+    -webkit-border-radius: 300px;
+    -moz-border-radius: 300px;
+    margin-left: 1px;
+    padding: 5px 15px 5px 15px;
+    transition: 0.5s;
+}
+.ic-tag a{
+    width: 100%;
+    height: 100%;
+}
+.ic-tag:hover{
+    background: #fff;
+    color: #23272D
+}
+
+.sc-projects .container .pro-item .text-area{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    
+}
+.sc-projects .container .pro-item .text-area .tag-box{
+    display: flex;
+    gap: 5px;
+}
+.sc-projects .container .pro-item .text-area a .title{
+    font-size: 3.2vw;
+    white-space: nowrap;
+}
+.sc-projects .container .pro-item .img-area{
+    /* background-image: url('https://arcr.ru/media/2024/06/EMP2024.jpg');
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover; */
+    /* height: 50vh; */
+    width: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    aspect-ratio: 744 / 365;
+    /* background: #f0f0f0; */
+    /* object-position: 70%; */
+}
+.sc-projects .container .pro-item .img-area img{
+    width: 100%;
+    height:calc(100% + 100px);
+    object-fit: cover;
+    filter: saturate(0.7); /* 채도를 50%로 감소 */
+}
+/* .sc-projects .container .pro-item .img-area:hover img{
+    transform: scale(1.2);
+    transition: 0.8s;
+} */
+
+.sc-projects ul li{
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+}
+.sc-etc{
+    color: #fff;
+    padding: 30px 0;
+    /* border-bottom: 1px solid #fff; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 14vw;
+    padding-bottom: 4vw;
+    overflow: hidden;
+    align-items: center;
+}
+.sc-etc .left{
+    /* margin-bottom: 30vh; */
+    font-family: 'nenu';
+}
+.sc-etc .left .line{
+    overflow: hidden;
+    display: flex;
+    white-space:nowrap ;
+    font-family: 'nenu';
+
+}
+.sc-etc .left p{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+    line-height: 1;
+}
+.sc-etc .right{
+    /* margin-right: 8vw; */
+}
+.sc-etc .right .word{
+    overflow: hidden;
+    font-size: 5vw;
+    text-transform: uppercase;
+    line-height: 1;
+    font-family: 'nenu';
+}
+
+@media screen and (max-width:767px) {
+    /* 모바일 */
+    .sc-projects .container .pro-item{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .sc-projects .container .pro-item .desc{
+        white-space: 2;
+    }
+    .sc-projects .container .pro-item .text-area{
+        gap: 10px;
+    }
+    .sc-projects .container .pro-item .text-area,.sc-projects .container .pro-item .img-area{
+        width: 100%;
+    }
+    .sc-intro{
+        flex-direction: column;
+    }
+    .sc-intro .left,.sc-intro .right{width: 100%;}
+    .sc-intro .right p{text-align-last: left;
+    font-size: 1.9vw;}
+    .sc-etc{
+        flex-direction: column-reverse;
+    }
+    .sc-etc .left,.sc-etc .right{width: 100%; flex: 1;}
+    .sc-intro .word,.sc-etc .right .word{font-size: 10vw;}
+    .sc-etc .left p{font-size: 2.5vw;}
+
+
+    }
+

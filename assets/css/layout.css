@@ -1,0 +1,150 @@
+@import './font.css';
+@import './reset.css';
+@import './common.css';
+
+    
+.cursor{
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    z-index: 100000111110;
+    border-radius: 50%;
+    pointer-events: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    top: 0;
+    cursor: none;
+    mix-blend-mode: difference;
+   
+}
+/* .cursor .original {
+    animation: 10s linear infinite normal none running infiniteAnimation1;
+  } */
+.cursor span {
+    animation: 7s linear infinite infiniteAnimation2;
+  }
+
+#header{
+    z-index: 925;
+    transition: all .2s;
+    width: 100%;
+    padding: 0 30px;
+    height: 70px;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    mix-blend-mode: difference;
+    font-size: 26px;
+}
+#header .inner{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#header .logo{
+  aspect-ratio: 82 / 20;
+  width: 100px;
+  height: auto;
+}
+
+#header .logo img{
+  filter: invert(100%);
+}
+
+
+#header .time .clock{
+    margin-left: 5px;
+    font-weight: bold;
+}
+#header .time{
+    display: flex;
+}
+
+#footer{
+    /* background: #23272D; */
+    color: #fff;
+}
+#footer .container{
+padding: 30px 10px;
+}
+#footer .container ul{
+}
+#footer .container ul li:hover{
+    background-color: #313336
+
+}
+#footer .container ul li{
+    border-bottom: 1px solid #ccc;
+    border-color: rgba(255, 255, 255, .12);
+    font-family: 'nenu';
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 300;
+    padding-top: 16px;
+    padding-right: 22px;
+    padding-bottom: 16px;
+    padding-left: 0px;
+    transition: 0.7s;
+}
+#footer .container ul li a{
+    grid-template-columns: repeat(3,1fr);
+    text-align-last: left;
+    display: flex;
+    align-items: center;
+   
+
+}
+#footer .container ul li a span{
+    width: 35%;
+}
+#footer .container ul li .id{
+    display: flex;
+    justify-content: flex-end;
+}
+#footer .container ul li a .media{
+}
+#footer .copyright{
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer .logo{
+    aspect-ratio: 82 / 20;
+    width: 100px;
+    height: auto;
+}
+#footer .logo img{
+    filter: invert(100%);
+}
+#footer .yr{}
+#footer .name{
+    font-family: 'pretend';
+}
+@media screen and (max-width:767px) {
+    /* 모바일 */
+    #footer .container ul li{
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 300;
+    padding-top: 5px;
+    padding-right: 22px;
+    padding-bottom: 5px;
+    padding-left: 0px;
+    font-size: 12px;
+    line-height: 24px;
+    }
+
+    }
+
+
